@@ -1,4 +1,4 @@
-#################### CASE STUDY : PENJUALAN BARANG TOKO SEPATU SEMBILAN ###################
+#################### CASE STUDY : PENDATAAN DATA BARANG TOKO SEPATU SEMBILAN ###################
 import json
 # buka file JSON
 file_json = open("Dataset.json")
@@ -34,8 +34,6 @@ def melihat_data():
 
 # FITUR SHOW DATA
 def show_data():
-    # dict_sepatu = load_data("dataset.json")  # Memuat data sepatu
-    # dict_sendal = load_data("dataset_sendal.json")  # Memuat data sendal
 
     while True:
         print('''  SELAMAT DATANG DI MENU MELIHAT SEPATU !!!
@@ -63,7 +61,7 @@ def show_data():
                     print(f'''{i}\t | {selected_database[i]["nama_sepatu"]}\t\t\t | {selected_database[i]["seri"]}\t | {selected_database[i]["harga_sepatu"]}\t | {selected_database[i]["stock_sepatu"]}\t\t | {selected_database[i]["jenis_sepatu"]}\t | {selected_database[i]["toko"]}\t\t\t | ''')
                 print("\n")
             elif input_db == "2":
-                selected_database = data_sendal # Data Sendal
+                selected_database = data_sendal 
                 if len(selected_database) == 0:
                     print("Data tidak ada")
                     print("\n")
@@ -75,7 +73,7 @@ def show_data():
             input_toko_filter = input("Masukkan data gudang mana yang anda pilih (A / B) ? ").lower()
             print("\n")
 
-            selected_database = data_sepatu #dict_sepatu 
+            selected_database = data_sepatu 
 
             data_filter = []
             for i in selected_database:
@@ -220,12 +218,12 @@ def update_data_sepatu():
                 # Konfirmasi update data
                 konfirmasi = input("\nApakah Anda ingin mengupdate data ini? (y/n): ").lower()
                 if konfirmasi == 'y':
-                    save_to_json(data_sepatu)  # Menyimpan perubahan ke file
+                    save_to_json(data_sepatu)  
                     print("Data Telah di update.")
-                    melihat_data()  # Menampilkan database setelah update
+                    melihat_data()  
                 else:
                     print("Update dibatalkan.")
-                    continue  # Kembali ke menu atau ulangi
+                    continue  
 
             elif input_update_nilai == "2":
                 try:
@@ -241,12 +239,12 @@ def update_data_sepatu():
                     # Konfirmasi update data
                     konfirmasi = input("\nApakah Anda ingin mengupdate data ini? (y/n): ").lower()
                     if konfirmasi == 'y':
-                        save_to_json(data_sepatu)  # Menyimpan perubahan ke file
+                        save_to_json(data_sepatu)  
                         print("Data Telah di update.")
-                        melihat_data()  # Menampilkan database setelah update
+                        melihat_data()  
                     else:
                         print("Update dibatalkan.")
-                        continue  # Kembali ke menu atau ulangi
+                        continue  
                 except:
                     print("Masukan dalam bentuk angka !!")
 
@@ -264,9 +262,9 @@ def update_data_sepatu():
                     # Konfirmasi update data
                     konfirmasi = input("\nApakah Anda ingin mengupdate data ini? (y/n): ").lower()
                     if konfirmasi == 'y':
-                        save_to_json(data_sepatu)  # Menyimpan perubahan ke file
+                        save_to_json(data_sepatu)  
                         print("Data Telah di update.")
-                        melihat_data()  # Menampilkan database setelah update
+                        melihat_data()  
                     else:
                         print("Update dibatalkan.")
                         continue  # Kembali ke menu atau ulangi
@@ -306,12 +304,12 @@ def update_data_sepatu():
                 # Konfirmasi update data
                 konfirmasi = input("\nApakah Anda ingin mengupdate data ini? (y/n): ").lower()
                 if konfirmasi == 'y':
-                    save_to_json(data_sepatu)  # Menyimpan perubahan ke file
+                    save_to_json(data_sepatu)  
                     print("Data Telah di update.")
-                    melihat_data()  # Menampilkan database setelah update
+                    melihat_data()  
                 else:
                     print("Update dibatalkan.")
-                    continue  # Kembali ke menu atau ulangi
+                    continue  
 
             elif input_update_nilai == "6":
                 while True:
@@ -332,12 +330,12 @@ def update_data_sepatu():
                 # Konfirmasi update data
                 konfirmasi = input("\nApakah Anda ingin mengupdate data ini? (y/n): ").lower()
                 if konfirmasi == 'y':
-                    save_to_json(data_sepatu)  # Menyimpan perubahan ke file
+                    save_to_json(data_sepatu)  
                     print("Data Telah di update.")
-                    melihat_data()  # Menampilkan database setelah update
+                    melihat_data()  
                 else:
                     print("Update dibatalkan.")
-                    continue  # Kembali ke menu atau ulangi
+                    continue  
 
             else:
                 print("Pilihan tidak valid.")
@@ -379,12 +377,12 @@ def delete_data_sepatu():
                 if konfirmasi == 'y':
                     # Menghapus data yang dipilih
                     del data_sepatu[input_hapus_user]
-                    save_to_json(data_sepatu)  # Menyimpan perubahan ke file JSON
+                    save_to_json(data_sepatu)  
                     print("Data berhasil dihapus.")
-                    melihat_data()  # Menampilkan data yang sudah diupdate
+                    melihat_data()  
                 else:
                     print("Penghapusan data dibatalkan.")
-                    continue  # Kembali ke menu atau ulangi
+                    continue  
             except ValueError:
                 print("Masukkan index yang valid, berupa angka.")
             except Exception as e:
