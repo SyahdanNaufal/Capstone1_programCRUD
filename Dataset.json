@@ -1,0 +1,98 @@
+[
+    {
+        "nama_sepatu": "max barent",
+        "seri": "spkj-01",
+        "harga_sepatu": 120000,
+        "stock_sepatu": 60,
+        "jenis_sepatu": "Sepatu kerja",
+        "toko": "a"
+    },
+    {
+        "nama_sepatu": "converse",
+        "seri": "spmn-01",
+        "harga_sepatu": 250000,
+        "stock_sepatu": 11,
+        "jenis_sepatu": "Sepatu main",
+        "toko": "a"
+    },
+    {
+        "nama_sepatu": "Nike Running",
+        "seri": "spsp-01",
+        "harga_sepatu": 755000,
+        "stock_sepatu": 28,
+        "jenis_sepatu": "Sepatu sport",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "docmart",
+        "seri": "spkj-02",
+        "harga_sepatu": 820000,
+        "stock_sepatu": 21,
+        "jenis_sepatu": "Sepatu kerja",
+        "toko": "a"
+    },
+    {
+        "nama_sepatu": "Air jordan",
+        "seri": "spsp-02",
+        "harga_sepatu": 920000,
+        "stock_sepatu": 21,
+        "jenis_sepatu": "Sepatu sport",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "rulief",
+        "seri": "spsp-03",
+        "harga_sepatu": 452000,
+        "stock_sepatu": 50,
+        "jenis_sepatu": "sepatu sport",
+        "toko": "a"
+    },
+    {
+        "nama_sepatu": "solomon",
+        "seri": "spsp-04",
+        "harga_sepatu": 2500000,
+        "stock_sepatu": 29,
+        "jenis_sepatu": "sepatu sport",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "puma ",
+        "seri": "spsp-05",
+        "harga_sepatu": 1200000,
+        "stock_sepatu": 15,
+        "jenis_sepatu": "sepatu sport",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "converse_sch",
+        "seri": "spmn_05",
+        "harga_sepatu": 1300000,
+        "stock_sepatu": 12,
+        "jenis_sepatu": "sepatu main",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "umap_xdr",
+        "seri": "spsp-06",
+        "harga_sepatu": 122000,
+        "stock_sepatu": 13,
+        "jenis_sepatu": "sepatu main",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "onitsuka",
+        "seri": "spmn-06",
+        "harga_sepatu": 3000000,
+        "stock_sepatu": 12,
+        "jenis_sepatu": "sepatu main",
+        "toko": "b"
+    },
+    {
+        "nama_sepatu": "badrock",
+        "seri": "spsp-07",
+        "harga_sepatu": 2342342,
+        "stock_sepatu": 2,
+        "jenis_sepatu": "spetu sport",
+        "toko": "a"
+    }
+]
